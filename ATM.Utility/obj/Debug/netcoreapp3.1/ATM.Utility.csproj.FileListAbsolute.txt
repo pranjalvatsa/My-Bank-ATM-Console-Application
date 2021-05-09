@@ -1,0 +1,9 @@
+/Users/pranjalsmacbook/Documents/Projects/MyBankATMApp/ATM.Utility/bin/Debug/netcoreapp3.1/ATM.Utility.deps.json
+/Users/pranjalsmacbook/Documents/Projects/MyBankATMApp/ATM.Utility/bin/Debug/netcoreapp3.1/ATM.Utility.dll
+/Users/pranjalsmacbook/Documents/Projects/MyBankATMApp/ATM.Utility/bin/Debug/netcoreapp3.1/ATM.Utility.pdb
+/Users/pranjalsmacbook/Documents/Projects/MyBankATMApp/ATM.Utility/obj/Debug/netcoreapp3.1/ATM.Utility.csprojAssemblyReference.cache
+/Users/pranjalsmacbook/Documents/Projects/MyBankATMApp/ATM.Utility/obj/Debug/netcoreapp3.1/ATM.Utility.AssemblyInfoInputs.cache
+/Users/pranjalsmacbook/Documents/Projects/MyBankATMApp/ATM.Utility/obj/Debug/netcoreapp3.1/ATM.Utility.AssemblyInfo.cs
+/Users/pranjalsmacbook/Documents/Projects/MyBankATMApp/ATM.Utility/obj/Debug/netcoreapp3.1/ATM.Utility.csproj.CoreCompileInputs.cache
+/Users/pranjalsmacbook/Documents/Projects/MyBankATMApp/ATM.Utility/obj/Debug/netcoreapp3.1/ATM.Utility.dll
+/Users/pranjalsmacbook/Documents/Projects/MyBankATMApp/ATM.Utility/obj/Debug/netcoreapp3.1/ATM.Utility.pdb
