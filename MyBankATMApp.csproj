@@ -1,0 +1,69 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="ATM.Utility\obj\ATM.Utility.csproj.nuget.g.props" />
+    <None Remove="ATM.Utility\obj\ATM.Utility.csproj.nuget.dgspec.json" />
+    <None Remove="ATM.Utility\obj\project.nuget.cache" />
+    <None Remove="ATM.Utility\obj\ATM.Utility.csproj.nuget.g.targets" />
+    <None Remove="ATM.Utility\obj\project.assets.json" />
+    <None Remove="ATM.Utility\obj\Debug\netcoreapp3.1\ATM.Utility.csprojAssemblyReference.cache" />
+    <None Remove="ATM.Utility\obj\Debug\netcoreapp3.1\ATM.Utility.assets.cache" />
+    <None Remove="ATM.Repository\obj\ATM.Repository.csproj.nuget.dgspec.json" />
+    <None Remove="ATM.Repository\obj\ATM.Repository.csproj.nuget.g.props" />
+    <None Remove="ATM.Repository\obj\ATM.Repository.csproj.nuget.g.targets" />
+    <None Remove="ATM.Repository\obj\project.nuget.cache" />
+    <None Remove="ATM.Repository\obj\project.assets.json" />
+    <None Remove="ATM.Repository\obj\Debug\netcoreapp3.1\ATM.Repository.csprojAssemblyReference.cache" />
+    <None Remove="ATM.Repository\obj\Debug\netcoreapp3.1\ATM.Repository.assets.cache" />
+    <None Remove="ATM.Repository\bin\Debug\netcoreapp3.1\ATM.Repository.deps.json" />
+    <None Remove="ATM.Repository\bin\Debug\netcoreapp3.1\ATM.Repository.dll" />
+    <None Remove="ATM.Repository\bin\Debug\netcoreapp3.1\ATM.Repository.pdb" />
+    <None Remove="ATM.Repository\obj\Debug\netcoreapp3.1\ATM.Repository.csprojAssemblyReference.cache" />
+    <None Remove="ATM.Repository\obj\Debug\netcoreapp3.1\ATM.Repository.AssemblyInfoInputs.cache" />
+    <None Remove="ATM.Repository\obj\Debug\netcoreapp3.1\ATM.Repository.csproj.CoreCompileInputs.cache" />
+    <None Remove="ATM.Repository\obj\Debug\netcoreapp3.1\ATM.Repository.dll" />
+    <None Remove="ATM.Repository\obj\Debug\netcoreapp3.1\ATM.Repository.pdb" />
+    <None Remove="ATM.Repository\obj\Debug\netcoreapp3.1\ATM.Repository.csproj.FileListAbsolute.txt" />
+    <None Remove="ATM.Utility\bin\Debug\netcoreapp3.1\ATM.Utility.deps.json" />
+    <None Remove="ATM.Utility\bin\Debug\netcoreapp3.1\ATM.Utility.dll" />
+    <None Remove="ATM.Utility\bin\Debug\netcoreapp3.1\ATM.Utility.pdb" />
+    <None Remove="ATM.Utility\obj\Debug\netcoreapp3.1\ATM.Utility.AssemblyInfoInputs.cache" />
+    <None Remove="ATM.Utility\obj\Debug\netcoreapp3.1\ATM.Utility.csproj.CoreCompileInputs.cache" />
+    <None Remove="ATM.Utility\obj\Debug\netcoreapp3.1\ATM.Utility.dll" />
+    <None Remove="ATM.Utility\obj\Debug\netcoreapp3.1\ATM.Utility.pdb" />
+    <None Remove="ATM.Utility\obj\Debug\netcoreapp3.1\ATM.Utility.csproj.FileListAbsolute.txt" />
+    <None Remove="ATM.Utility\obj\Debug\netcoreapp3.1\ATM.Utility.csprojAssemblyReference.cache" />
+    <None Remove="ATM.Repository\obj\Debug\netcoreapp3.1\ATM.Repository.csprojAssemblyReference.cache" />
+    <None Remove="ATM.Utility\obj\Debug\netcoreapp3.1\ATM.Utility.csprojAssemblyReference.cache" />
+    <None Remove="ATM.Utility\obj\Debug\netcoreapp3.1\ATM.Utility.csprojAssemblyReference.cache" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="ATM.Repository\Entities\BankAccountUser.cs" />
+    <Compile Remove="ATM.Repository\Entities\Transaction.cs" />
+    <Compile Remove="ATM.Repository\Entities\Transaction.cs" />
+    <Compile Remove="ATM.Repository\Entities\Transaction.cs" />
+    <Compile Remove="ATM.Repository\Entities\BankAccountUser.cs" />
+    <Compile Remove="ATM.Repository\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Remove="ATM.Repository\obj\Debug\netcoreapp3.1\ATM.Repository.AssemblyInfo.cs" />
+    <Compile Remove="ATM.Utility\obj\Debug\netcoreapp3.1\ATM.Utility.AssemblyInfo.cs" />
+    <Compile Remove="ATM.Repository\Enum\TransactionType.cs" />
+    <Compile Remove="ATM.Repository\Interface\IBankAccountUser.cs" />
+    <Compile Remove="ATM.Repository\Interface\ITransaction.cs" />
+    <Compile Remove="ATM.Utility\obj\Debug\netcoreapp3.1\.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" />
+    <Compile Remove="ATM.Utility\Utility.cs" />
+    <Compile Remove="ATM.Utility\Validator.cs" />
+    <Compile Remove="ATM.Repository\Enum\SecureMenu.cs" />
+    <Compile Remove="ATM.Utility\Utility.cs" />
+    <Compile Remove="ATM.Repository\Interface\IATMApp.cs" />
+    <Compile Remove="ATM.Utility\Validator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ATM.Repository\ATM.Repository.csproj" />
+    <ProjectReference Include="ATM.Utility\ATM.Utility.csproj" />
+  </ItemGroup>
+</Project>
