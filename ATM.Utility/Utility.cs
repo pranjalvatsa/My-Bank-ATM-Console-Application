@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 using System.Text;
 using System.Threading;
 
@@ -6,7 +7,15 @@ namespace ATM.Utility
 {
     public static class Utility
     {
-        
+
+        private static CultureInfo culture = new CultureInfo("en-IN");
+        private static long tranId;
+
+
+        public static long GetTransactionId()
+        {
+            return ++tranId;
+        }
 
         /// <summary>
         /// Show the press enter to continue message
@@ -24,8 +33,7 @@ namespace ATM.Utility
         /// <returns></returns>
         public static string GetRawInput (string message)
         {
-           Console.Write(String.Format("Enter {0}:",message);
-
+            Console.Write($"Enter {message}: ");
             return Console.ReadLine();
         }
         /// <summary>
@@ -109,6 +117,20 @@ namespace ATM.Utility
                 Console.Write(msg);
 
             PressEnterMessage();
+        }
+
+        public static string FormatAmount(decimal amt)
+        {
+            return String.Format(culture, "{0:C2}", amt);
+        }
+
+        public static void PrintUserInputLabel(string msg, bool ConsoleWriteLine = false)
+        {
+            if (ConsoleWriteLine)
+                Console.WriteLine(msg);
+            else
+                Console.Write(msg);
+
         }
     }
 }
