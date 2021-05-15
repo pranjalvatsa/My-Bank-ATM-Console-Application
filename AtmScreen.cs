@@ -1,6 +1,7 @@
-﻿using System;
+using System;
 using ATM.Repository.Entities;
 using ATM.Utility;
+using MyBankATMApp.ViewModels;
 
 namespace MyBankATMApp
 {
@@ -9,6 +10,8 @@ namespace MyBankATMApp
     /// </summary>
     internal class AtmScreen
     {
+        internal const string currency = "INR ";
+
         public AtmScreen()
         {
         }
@@ -89,9 +92,42 @@ namespace MyBankATMApp
             Environment.Exit(1);
         }
 
+        
+
+        internal static void PrintCheckBalanceScreen()
+        {
+            Console.Write("Account balance amount: ");
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
         internal static void LogoutProgress()
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Thank you for using Meybank ATM system.");
+            Utility.PrintDotAnimation();
+            Console.Clear();
         }
+
+        /// <summary>
+        /// Show the 3rd party transfer form to the user
+        /// </summary>
+        /// <returns></returns>
+        internal VMThirdPartyTransfer ThirdPartyTransferForm()
+        {
+            var vMThirdPartyTransfer = new VMThirdPartyTransfer();
+
+            //vMThirdPartyTransfer.RecipientBankAccountNumber = Validator.GetValidIntInputAmt("recipient's account number");
+            vMThirdPartyTransfer.RecipientBankAccountNumber = Validator.Convert<long>("recipient's account number");
+
+            //vMThirdPartyTransfer.TransferAmount = Validator.GetValidDecimalInputAmt($"amount {AtmScreen.currency}");            
+            vMThirdPartyTransfer.TransferAmount = Validator.Convert<decimal>($"amount {currency}");
+
+            vMThirdPartyTransfer.RecipientBankAccountName = Utility.GetRawInput("recipient's account name");
+            // no validation here yet.
+
+            return vMThirdPartyTransfer;
+        }
+
     }
 }
